@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 30px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+
+header ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 15px,15px;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  height: auto;
+  font-size: 20px;
+  overflow: hidden;
+  border: 1px solid black;
+  top: 0;
+  float: right;
+  z-index: 1;
+}
+
+header li
+{
+  float: right;
+}
+
+header li a {
+  display: block;
+  color: #b22222;
+  padding: 32px ;
+  text-decoration: none;
+}
+
+
+header li a:hover{
+  background-color: #555;
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+//form style.
+
+.container {
+    max-width: 7000px;
+    margin-top: 200px; 
+    margin-left: 33%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b22222;
+}
+
+h2 
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #b22222;
+}
+
+.paragraph
+{
+    text-align: center;
+    color: #666;
+}
+
+form
+{
+	max-width: 600px;
+	margin: auto; /* Center the form horizontally */
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.section1,
+.section2 
+{
+	margin-bottom: 20px;
+}
+
+
+fieldset 
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend 
+{
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #eee;
+}
+
+.form-group 
+{
+    margin-bottom: 15px;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea 
+{
+  
+	width: auto;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+    box-sizing: border-box;
+
+}
+
+
+
+.section2 input[type="text"] 
+{
+ 
+	width: auto;
+	margin-right: 10px;
+
+}
+
+.section2 input[type="number"] 
+{
+	width: 80px;
+}
+
+
+.form-actions
+{
+    text-align: center;
+}
+
+
+button[type="submit"] 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+button[type="reset"] 
+{
+    background-color: #ccc;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    opacity: 0.8;
+}
+
+
+//fee page style.
+
+.feecontainer {
+            width: 80%;
+            margin: 0 auto;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+}
+
+th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+}
+
+th 
+{
+            background-color: #f2f2f2;
+}
+
+
+.indexContainer
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+
+}
+
+.Box
+{
+	background-color: white;
+	color: #b22222;
+	height : 250px;
+	width : 250px;
+	border-radius: 1rem;
+	border-color: #b22222;
+	box-shadow: 0 0 1rem rgb(0,0,0,0.4);
+	font-size: 30px;
+	align-item: center;
+	margin-top: 15%;
+
+}
+
+
+#Box1:hover
+{
+	background-image: url("images/timing.PNG");
+	background-size: cover;
+	color: black;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.5s ease-in-out;
+	border-radius: 50%;
+
+}
+
+#Box2:hover
+{
+	background-image: url("images/fee.PNG");
+	background-size: cover;
+	color: black;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.5s ease-in-out;
+	border-radius: 50%;
+
+}
+
+#Box3:hover
+
+{
+	background-image: url("images/marks.PNG");
+	background-size: cover;
+	color: black;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.5s ease-in-out;
+	border-radius: 50%;
+
+
+}
+
+#Box4:hover
+
+{
+	background-image: url("images/attendance.PNG");
+	background-size: cover;
+	color: black;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.5s ease-in-out;
+	border-radius: 50%;
+
+
+}
+
+div
+{
+ padding: 1px;
+ height: auto;
+}
+

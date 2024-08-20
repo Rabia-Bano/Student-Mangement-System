@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+	<ul>
+		<img style="float:left" src="images/logo.PNG" alt="logo">
+		<li><a href="ATTENDANCE.html">Attendance</a></li>
+		<li><a href="MARKS.html">Marks</a></li>
+ 		<li><a href="FEE.html">Fee</a></li>
+		<li><a href="TIME TABLE.html">Time Table</a></li>
+		<li><a href="HOME.html">Home</a></li>
+	</ul>
+</header>
+
+<main>
+    <h1>Student Marks</h1>
+    <form id="std-marks-form" action="marks.php" method="post">
+        <label for="std_id">Student ID:
+        <input type="number" id="std_id" name="std_id" required></label>
+        <br><br>
+        <label for="std_name">Student Name:
+        <input type="text" id="std_name" name="std_name" required></label>
+        <br><br>
+        <label for="subject">Subject:
+        <input type="text" id="subject" name="subject" required></label>
+        <br><br>
+        <label for="marks">Marks:
+        <input type="number" id="marks" name="marks" min="0" max="40" required></label>
+	<br><br><br><br>
+
+	<div class="form-actions">
+        <button type="submit">Add Marks</button>
+	</div>
+    </form>
+</main>
+<br><br><br>
+<br><hr><br>
+    <footer>
+        <div class="paragraph"><strong>&copy; 2024 Government Graduate College, Civil Lines, Sheikhupura</strong>
+        <h3>Contact Information:</h3>
+            
+            <b>Address:</b> Government Graduate College, Civil Lines, Sheikhupura 39350
+            <br><br>
+            <b>Phone:</b> (056)3783030
+            <br><br>
+            <b>Email:</b> info@gcbskp.edu.pk
+        </div>
+    </footer>
+
+</body>
+</html>

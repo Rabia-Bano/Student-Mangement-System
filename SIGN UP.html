@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<ul>
+		<img style="float:left" src="images/logo.PNG" alt="logo">
+		<li><a href="SIGN IN.html">Sign In</a></li>
+ 		<li><a href="SIGN UP.html">Sign Up</a></li>
+		<li><a href="HOME.html">Home</a></li>
+	</ul>
+</header>
+
+<main>
+	<h1>Sign Up</h1>
+
+
+    <div class="container">
+
+            <form id="signup-form" action="enrollment.php" method="post">
+                <div class="section1">
+
+                    <h2>Personal Information</h2><br>
+
+                    <label for="std_id">Student ID:
+                        <input type="number" name="std_id" id="std_id" required>
+                    </label>
+                    <br><br>
+                    <label for="std_name">Name:
+                        <input type="text" name="std_name" placeholder="Enter your name" required>
+                    </label>
+                    <br><br>
+                    <label for="father_name">Father Name :
+                        <input type="text" name="father_name" placeholder="Enter your father name" required>
+                    </label>
+                    <br><br>
+                    <label for="cnic-number">CNIC Number :
+                        <input type="text" id="cnic_number" name="cnic_number" placeholder="XXXX-XXXX-XXXX" maxlength="14">
+                    </label>
+                    <br><br>
+                    <fieldset>
+                        <legend>Gender</legend>
+
+                        <p>
+                            Male <input type="radio" name="gender" id="male" required>
+                            Female <input type="radio" name="gender" id="female" required>
+                        </p>
+                    </fieldset>
+                    <br>
+
+	            <label for="d_o_f">Date of Birth:
+	            <input type="date" id="d_o_f" name="d_o_f" required></label>
+		    <br>
+
+                    <label for="address">Address :
+                        <textarea name="address" id="address" cols="60" rows="3"></textarea>
+                    </label>
+                    <br><br>
+                    <label for="email">Email :
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </label>
+                    <br><br>
+                    <label for="ph_no">Phone No :
+                        <input type="tel" id="ph_no" name="ph_no" placeholder="Enter your phone number" required>
+                    </label>
+                    <br>
+
+                </div>
+
+
+                <div class="section2">
+                    <h2>Academic Information</h2><br>
+
+
+                    <label for="matric_from">Matric From :
+                        <input type="text" id="matric_from" name="matric_from" placeholder="Enter School name" required>
+                    </label>
+                    <br>
+                    <label for="matric_year"> Year :
+                        <input type="number" id="matric_year" name="matric_year" min="2018" max="2022" placeholder="degree year" required>
+                    </label>
+                    <br>
+                    <label for="matric_number">Matric Marks :
+                        <input type="number" id="matric_number" name="matric_number" min="0" max="1100" placeholder="0/1100" required>
+                    </label>
+
+                    <br><br>
+
+                    <label for="intermediate_from">Intermediate From :
+                        <input type="text" id="intermediate_from" name="intermediate_from" placeholder="Enter Collage name">
+                    </label>
+
+                    <br>
+                    <label for="intermediate_year"> Year :
+                        <input type="number" id="intermediate_year" name="intermediate_year" min="2020" max="2024" placeholder="degree year">
+                    </label>
+                    <br>
+                    <label for="intermediate_number">Intermediate Marks :
+                        <input type="number" id="intermediate_number" name="intermediate_number" min="0" max="1100" placeholder="0/1100">
+                    </label>
+                </div>
+                <br>
+
+                <h2>Create Password</h2><br>
+                <div class="form-group">
+                    <label for="password">Password:
+                        <input type="password" id="password" name="password" required>
+                    </label>
+                </div>
+
+		<br><br><br><br>
+
+		<div class="form-actions">
+       			<button type="submit" name="save">SignUp Now</button>
+        		<button type="reset">Clear Form</button>
+		</div>
+
+            </form>
+
+    </div>
+</main>
+<br><br><br>
+<br><hr><br>
+    <footer>
+        <div class="paragraph"><strong>&copy; 2024 Government Graduate College, Civil Lines, Sheikhupura</strong>
+        <h3>Contact Information:</h3>
+            
+            <b>Address:</b> Government Graduate College, Civil Lines, Sheikhupura 39350
+            <br><br>
+            <b>Phone:</b> (056)3783030
+            <br><br>
+            <b>Email:</b> info@gcbskp.edu.pk
+        </div>
+    </footer>
+
+</body>
+</html>

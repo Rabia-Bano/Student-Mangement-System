@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<header>
+	<ul>
+		<img style="float:left" src="images/logo.PNG" alt="logo">
+		<li><a href="ATTENDANCE.html">Attendance</a></li>
+		<li><a href="MARKS.html">Marks</a></li>
+ 		<li><a href="FEE.html">Fee</a></li>
+		<li><a href="TIME TABLE.html">Time Table</a></li>
+		<li><a href="HOME.html">Home</a></li>
+	</ul>
+</header>
+
+<main>
+
+    <h1>Submit Fee Online</h1>
+    <form action="fee.php" method="post">
+        <label for="std_id">Student ID:
+        <input type="text" id="std_id" name="std_id" required></label>
+        <br><br>
+    
+        <label for="std_name">Student Name:
+        <input type="text" id="std_name" name="std_name" required></label>
+        <br><br>
+
+        <label for="challan_num">Challan No:
+        <input type="number" id="challan_num" name="challan_num" required></label>
+	<br><br>
+
+        <label for="date">Date:
+        <input type="date" id="date" name="date" required></label>
+	<br><br>
+
+        <label for="amount">Amount:
+        <input type="number" id="amount" name="amount" required></label>
+
+	<br><br>
+
+
+
+
+        <label for="payment_method">Payment Method:
+        <select id="payment_method" name="payment_method">
+
+            <option value="credit_card">Credit Card</option>
+
+            <option value="debit_card">Debit Card</option>
+
+            <option value="net_banking">Net Banking</option>
+
+        </select></label>
+
+	<br><br>
+
+        <label for="card_num">Card No:
+        <input type="number" id="card_num" name="card_num" required></label>
+
+	<br><br><br><br>
+
+	<div class="form-actions">
+        <button type="submit">Submit</button>
+	</div>
+    </form>
+
+
+    <div class="feecontainer">
+        <h1>Fee Structure</h1>
+        <h2>Details of Fee for Intermediate</h2>
+        <table>
+            <tr>
+                <th>1.</th>
+                <td>Admission Fee</td>
+                <td>Science - Rs. 65<br>Arts - Rs. 80</td>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <td>Examination Fee</td>
+                <td>Rs. 180 (Annual)</td>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <td>Tuition Fee</td>
+                <td>Rs. 600 (Annual)</td>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <td>General Fund</td>
+                <td>Rs. 180 (Annual)<br>Rs. 50 (Annual)</td>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <td>Medical Fund</td>
+                <td>Rs. 50 (Annual)</td>
+            </tr>
+            <tr>
+                <th>6.</th>
+                <td>College Magazine</td>
+                <td>Rs. 150 (Annual)</td>
+            </tr>
+            <tr>
+                <th>7.</th>
+                <td>College Welfare</td>
+                <td>Rs. 50 (Annual)</td>
+            </tr>
+            <tr>
+                <th>8.</th>
+                <td>Library Security</td>
+                <td>Rs. 500 (Annual) (Returnable)</td>
+            </tr>
+            <tr>
+                <th>9.</th>
+                <td>Red Crescent</td>
+                <td>Rs. 60 (Annual)</td>
+            </tr>
+            <tr>
+                <th>10.</th>
+                <td>Science Breakage</td>
+                <td>Rs. 60 (Annual)</td>
+            </tr>
+            <tr>
+                <th>11.</th>
+                <td>Second Shift Fee</td>
+                <td>Rs. 3600 (Annual)</td>
+            </tr>
+            <tr>
+                <th>12.</th>
+                <td>Cycle Parking</td>
+                <td>Rs. 100 (Annual)</td>
+            </tr>
+            <tr>
+                <th>13.</th>
+                <td>Sports Fund</td>
+                <td>Rs. 180 (Annual)</td>
+            </tr>
+            <tr>
+                <th>14.</th>
+                <td>College Card</td>
+                <td>Rs. 50 (Annual)</td>
+            </tr>
+            <tr>
+                <th>15.</th>
+                <td>Board / University Affiliation Fund</td>
+                <td>Rs. 240 (Annual)</td>
+            </tr>
+            <tr>
+                <th>16.</th>
+                <td>Computer Fee</td>
+                <td>Rs. 300 (Annual)</td>
+            </tr>
+            <tr>
+                <th>17.</th>
+                <td>Board Registration Fee</td>
+                <td>Rs. 1295 (Annual)</td>
+            </tr>
+            <tr>
+                <th>18.</th>
+                <td>Mosque Fund</td>
+                <td>Rs. 100 (Annual) (At the time of admission)</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="feecontainer">
+        <h2>Details of Fee for BS (Per Semester)</h2>
+        <table>
+            <tr>
+                <th>1.</th>
+                <td>Admission Fee</td>
+                <td>Rs. 225</td>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <td>Examination Fee</td>
+                <td>Rs. 200</td>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <td>Tuition Fee</td>
+                <td>Rs. 360</td>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <td>Red Cross Fund</td>
+                <td>Rs. 30</td>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <td>Medical Fund</td>
+                <td>Rs. 30</td>
+            </tr>
+            <tr>
+                <th>6.</th>
+                <td>College Magazine Fund</td>
+                <td>Rs. 60</td>
+            </tr>
+            <tr>
+                <th>7.</th>
+                <td>College Welfare Fund</td>
+                <td>Rs. 50 (Annual)</td>
+            </tr>
+            <tr>
+                <th>8.</th>
+                <td>Library Security</td>
+                <td>Rs. 300 (Refundable)</td>
+            </tr>
+            <tr>
+                <th>9.</th>
+                <td>Enrollment Fee (Univ.)</td>
+                <td>Rs. 2000</td>
+            </tr>
+            <tr>
+                <th>10.</th>
+                <td>Breakage Fund</td>
+                <td>Rs. 120</td>
+            </tr>
+            <tr>
+                <th>11.</th>
+                <td>Sports Fund</td>
+                <td>Rs. 90</td>
+            </tr>
+            <tr>
+                <th>12.</th>
+                <td>Cycle Parking / Burqa Fund</td>
+                <td>Rs. 50</td>
+            </tr>
+            <tr>
+                <th>13.</th>
+                <td>University Affiliation Fund</td>
+                <td>Rs. 100 (At the time of admission)</td>
+            </tr>
+            <tr>
+                <th>14.</th>
+                <td>College Card</td>
+                <td>Rs. 50</td>
+            </tr>
+            <tr>
+                <th>15.</th>
+                <td>Registration Fee (Univ.)</td>
+                <td>Rs. 3720</td>
+            </tr>
+            <tr>
+                <th>16.</th>
+                <td>Computer Fee</td>
+                <td>Rs. 300</td>
+            </tr>
+            <tr>
+                <th>17.</th>
+                <td>Sports Fee (Univ.)</td>
+                <td>Rs. 2000</td>
+            </tr>
+            <tr>
+                <th>18.</th>
+                <td>General Fund</td>
+                <td>Rs. 50</td>
+            </tr>
+        </table>
+    </div>
+</main>
+<br><br><br>
+<br><hr><br>
+    <footer>
+        <div class="paragraph"><strong>&copy; 2024 Government Graduate College, Civil Lines, Sheikhupura</strong>
+        <h3>Contact Information:</h3>
+            
+            <b>Address:</b> Government Graduate College, Civil Lines, Sheikhupura 39350
+            <br><br>
+            <b>Phone:</b> (056)3783030
+            <br><br>
+            <b>Email:</b> info@gcbskp.edu.pk
+        </div>
+    </footer>
+
+</body>
+</html>
